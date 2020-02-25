@@ -1,7 +1,7 @@
 #pragma once
 
 //project header
-#include "FAssetDetail.h"
+#include "AssetManager/FAssetDetail.h"
 
 //engine header
 #include "CoreMinimal.h"

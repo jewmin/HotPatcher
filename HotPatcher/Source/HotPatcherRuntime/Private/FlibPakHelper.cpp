@@ -3,7 +3,7 @@
 
 #include "FlibPakHelper.h"
 #include "IPlatformFilePak.h"
-#include "PlatformFilemanager.h"
+#include "HAL/PlatformFilemanager.h"
 #include "Misc/ScopeExit.h"
 
 // Engine Header

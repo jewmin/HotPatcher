@@ -8,7 +8,6 @@
 #include "Templates/SharedPointer.h"
 #include "AssetRegistryModule.h"
 #include "CoreMinimal.h"
-#include "Templates/SharedPointer.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "FLibAssetManageHelperEx.generated.h"
 

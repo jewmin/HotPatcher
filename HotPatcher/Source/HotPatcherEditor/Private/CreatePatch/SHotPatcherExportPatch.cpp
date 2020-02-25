@@ -8,7 +8,7 @@
 #include "FLibAssetManageHelperEx.h"
 #include "FPakFileInfo.h"
 // engine header
-#include "SHyperlink.h"
+#include "Widgets/Input/SHyperlink.h"
 #include "Misc/FileHelper.h"
 #include "Widgets/Layout/SSeparator.h"
 #include "Widgets/Text/SMultiLineEditableText.h"
