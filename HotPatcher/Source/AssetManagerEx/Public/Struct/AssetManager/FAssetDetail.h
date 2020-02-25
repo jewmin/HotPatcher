@@ -26,11 +26,11 @@ struct ASSETMANAGEREX_API FAssetDetail
 		return bSamePackageName && bSameAssetType && bSameGUID;
 	}
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetDetail")
 		FString mPackagePath;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetDetail")
 		FString mAssetType;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetDetail")
 		FString mGuid;
 	
 };

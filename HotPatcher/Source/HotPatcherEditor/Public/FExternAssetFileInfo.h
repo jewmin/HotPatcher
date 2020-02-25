@@ -16,7 +16,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BaseVersion", meta = (RelativeToGameContentDir))
 		FFilePath FilePath;
-	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "ExternAssetFileInfo")
 		FString MountPath = TEXT("../../../");
 
 

@@ -9,8 +9,8 @@ USTRUCT(BlueprintType)
 struct ASSETMANAGEREX_API FAssetDependenciesInfo
 {
 	GENERATED_USTRUCT_BODY()
-		//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetDependenciesInfo")
 		//FString mAssetRef;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetDependenciesInfo")
 		TMap<FString,FAssetDependenciesDetail> mDependencies;
 };

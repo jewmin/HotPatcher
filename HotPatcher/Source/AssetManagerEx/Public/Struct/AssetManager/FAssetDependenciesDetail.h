@@ -19,10 +19,10 @@ struct ASSETMANAGEREX_API FAssetDependenciesDetail
 		: mModuleCategory(InModuleCategory), mDependAssetDetails(InDependAssetDetails)
 	{}
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetDependenciesDetail")
 		FString mModuleCategory;
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetDependenciesDetail")
 	//	TArray<FString> mDependAsset;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetDependenciesDetail")
 		TMap<FString,FAssetDetail> mDependAssetDetails;
 };

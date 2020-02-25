@@ -13,20 +13,20 @@ struct FHotPatcherVersion
 
 public:
 
-	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "HotPatcherVersion")
 	FString VersionId;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HotPatcherVersion")
 	FString BaseVersionId;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HotPatcherVersion")
 	FString Date;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HotPatcherVersion")
 	TArray<FString> IncludeFilter;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HotPatcherVersion")
 	TArray<FString> IgnoreFilter;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HotPatcherVersion")
 	bool bIncludeHasRefAssetsOnly;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HotPatcherVersion")
 	TArray<FPatcherSpecifyAsset> IncludeSpecifyAssets;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HotPatcherVersion")
 	FAssetDependenciesInfo AssetInfo;
 };

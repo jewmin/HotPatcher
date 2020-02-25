@@ -11,9 +11,9 @@ struct FPatcherSpecifyAsset
 
 public:
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PatcherSpecifyAsset")
 		FSoftObjectPath Asset;
-	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "PatcherSpecifyAsset")
 		bool bAnalysisAssetDependencies;
 
 };
