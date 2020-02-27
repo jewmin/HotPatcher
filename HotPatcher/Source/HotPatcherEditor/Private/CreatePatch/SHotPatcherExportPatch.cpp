@@ -441,6 +441,7 @@ FReply SHotPatcherExportPatch::DoExportPatch()
 			}
 
 			// create UnrealPak process
+			UE_LOG(LogTemp, Log, TEXT("Exec = %s, Cmd = %s"), *UnrealPakBinary, CommandLine);
 
 			uint32 *ProcessID = NULL;
             FProcHandle ProcessHandle = FPlatformProcess::CreateProc(*UnrealPakBinary, *CommandLine, true, false, false, ProcessID, 0, NULL, NULL, NULL);
