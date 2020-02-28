@@ -315,16 +315,16 @@ bool UFlibPakHelper::LoadVersionInfoByPak(const FString& InPakFile, FPakVersion&
 	bool bRunStatus = false;
 	
 	TArray<FPakVersion> AllVersionInfo;
-	auto ScanAllFilesLambda = [&AllVersionInfo](const FPakFile* InPakFile)->bool
+	auto ScanAllFilesLambda = [&AllVersionInfo](const FPakFile* pInPakFile)->bool
 	{
 		bool bLambdaRunStatus = false;
-		if (InPakFile)
+		if (pInPakFile)
 		{
 			// UE_LOG(LogTemp, Log, TEXT("Scan All Files Lambda: InPakFile is not null."));
 			TArray<FString> AllVersionDescribleFiles;
-			FString PakMountPoint = InPakFile->GetMountPoint();
+			FString PakMountPoint = pInPakFile->GetMountPoint();
 
-			InPakFile->FindFilesAtPath(AllVersionDescribleFiles, *InPakFile->GetMountPoint(), true, false, true);
+			pInPakFile->FindFilesAtPath(AllVersionDescribleFiles, *pInPakFile->GetMountPoint(), true, false, true);
 
 			// UE_LOG(LogTemp, Log, TEXT("Scan All Files Lambda:  FindFilesAtPath num is %d."),AllVersionDescribleFiles.Num());
 
