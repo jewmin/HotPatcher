@@ -14,6 +14,7 @@
 #include "Templates/SharedPointer.h"
 #include "Interfaces/IPluginManager.h"
 #include "Engine/AssetManager.h"
+#include "Misc/FileHelper.h"
 #include "AssetData.h"
 #ifdef __DEVELOPER_MODE__
 #include "Interfaces/ITargetPlatform.h"
